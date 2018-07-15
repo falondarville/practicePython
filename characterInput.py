@@ -16,4 +16,3 @@ time_from = 100 - age
 time_100 = current_year + time_from
 
 print(f"Hi {name}! You turn 100 in the year {time_100}")
-
