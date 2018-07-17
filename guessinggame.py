@@ -5,7 +5,7 @@ random_number = random.randint(1, 10)
 
 user_guesses = 0
 
-print("Please choose a number between 1 and 9. Enter 'exit' to stop playing.")
+print("Please choose a number between 1 and 9.")
 user_input = input()
 
 while random_number != int(user_input):
