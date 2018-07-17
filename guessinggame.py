@@ -17,8 +17,7 @@ while random_number != int(user_input):
 		print("You guessed too high.")
 		user_guesses += 1
 		user_input = input()
-	elif user_input == "exit":
-		break
 user_guesses += 1
 print("That's the same number the computer chose.")
 print(f"You guessed a total of {user_guesses} times.")
+	
