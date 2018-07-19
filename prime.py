@@ -1,6 +1,6 @@
 # Ask the user for a number and determine whether the number is prime or not. A prime number is a number that has no divisor. 
 
-print("Please enter a number.")
+print("Please enter a number over 1.")
 
 user_input = int(input())
 
