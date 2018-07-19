@@ -4,7 +4,7 @@ print("Please enter a number.")
 
 user_input = int(input())
 
-if user_input > 0:
+if user_input > 1:
 	# Make a range containing numbers 2 through user_input - 2, since prime numbers are divisible by one and themselves only. We don't want to include these, or the number will not be recognized as prime. For each item in this range, iterate through and divide the user number by it. If the number is divisible by any of the numbers in this range, it is not prime. 
 	check_range = range(2, user_input-1)
 
