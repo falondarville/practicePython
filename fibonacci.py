@@ -7,5 +7,6 @@ user_input = int(input())
 def check_fibonacci(num):
 	# generate the sequence on the fly or hard code it?
 	# take the user_input, which will be a single number, and use this to generate the number of numbers that will return. 
+	[i for i in ]
 
 print(check_fibonacci(user_input))
