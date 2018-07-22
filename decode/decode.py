@@ -10,6 +10,5 @@ r_html = r.text
 
 soup = BeautifulSoup(r_html, 'html.parser')
 
-title_list = soup.findAll("h1")
-
-print(title_list)
+for title in soup.find_all("h1"):
+	print(title.find("a").text)
