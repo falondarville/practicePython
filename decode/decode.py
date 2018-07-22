@@ -4,10 +4,12 @@
 # Note that I had to install this package using pip3, not pip.
 import requests
 from bs4 import BeautifulSoup
-soup = BeautifulSoup(html_doc, 'html.parser')
 
 r = requests.get('https://www.nytimes.com/')
+r_html = r.text
 
-soup.h1["story-heading"].a
+soup = BeautifulSoup(r_html, 'html.parser')
 
-print(r)
+title_list = soup.findAll("h1")
+
+print(title_list)
