@@ -4,9 +4,24 @@
 import random
 
 # generate a 4-digit number
-num_one = random.randint(1000, 10000)
+num = random.randint(1000, 10000)
+
+# need to separate num into a list of four numbers, so I can check their index and value
+num = [int(d) for d in str(num)]
+
+print(num)
 
 print("Please guess a four-digit number.")
+
 user_input = input()
+user_input = [int(n) for n in str(user_input)]
+print(user_input)
 
+# check that the user's input meets the length requirement
+while len(user_input) != 4:
+	print("Please choose a four digit number.")
+	user_input = input()
+	user_input = [int(n) for n in str(user_input)]
 
+# correct in right place = cow
+# correct in wrong place = bull
