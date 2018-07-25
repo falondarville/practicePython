@@ -25,3 +25,24 @@ while len(user_input) != 4:
 
 # correct in right place = cow
 # correct in wrong place = bull
+def check_cows(num, user_input):
+	cows = 0
+	for x in range(0, 4):
+		if (num[x] == user_input[x]):
+			cows +=1
+
+check_cows(num, user_input)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
