@@ -4,8 +4,12 @@ print("Tell me how many boxes across you would like on your game board.")
 user_input = int(input())
 
 def generate_board(i):
-	print(" --- " * i)
-	print("   |   " * i)
-	print(" --- " * i)
+	dashes = " --- " * i
+	pipes = "|    " * (i +1)
+
+	for x in range(0, i):
+		print(dashes)
+		print(pipes)
+	print(dashes)
 
 generate_board(user_input)
